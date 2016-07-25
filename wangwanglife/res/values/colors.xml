@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 白 -->
+    <color name="white">#FFFFFFFF</color>
+    <!-- 透明 -->
+    <color name="transparent">#0000</color>
+    <!-- 旺旺黄 -->
+    <color name="yellow_ww">#FFFFCC00</color>
+    <!-- 全局TextView默认字体颜色 -->
+    <color name="default_text_color">#FF003366</color>
+    <!-- 灰色分隔线 -->
+    <color name="gray_line">#FFCDCDCD</color>
+
+</resources>

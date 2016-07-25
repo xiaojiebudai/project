@@ -4,6 +4,142 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <include layout="@layout/head_operation" />
+    <RelativeLayout
+        android:id="@+id/rl_container"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </RelativeLayout>
+
+    <View style="@style/cutline_fine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_tab_height"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rl_tab_homepage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="onTabClick" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="@dimen/bottom_tab_image_size"
+                    android:layout_height="@dimen/bottom_tab_image_size"
+                    android:background="@color/yellow_ww"
+                    android:duplicateParentState="true" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:gravity="center"
+                    android:text="@string/home_page"
+                    android:textColor="@color/text_selected_yellow_black" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_tab_order"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="onTabClick" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:duplicateParentState="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="@dimen/bottom_tab_image_size"
+                    android:layout_height="@dimen/bottom_tab_image_size"
+                    android:background="@color/yellow_ww"
+                    android:duplicateParentState="true" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:gravity="center"
+                    android:text="@string/order"
+                    android:textColor="@color/text_selected_yellow_black" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_tab_person_center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="onTabClick" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:duplicateParentState="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="@dimen/bottom_tab_image_size"
+                    android:layout_height="@dimen/bottom_tab_image_size"
+                    android:background="@color/yellow_ww"
+                    android:duplicateParentState="true" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:gravity="center"
+                    android:text="@string/person_center"
+                    android:textColor="@color/text_selected_yellow_black" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_tab_share"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="onTabClick" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:duplicateParentState="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="@dimen/bottom_tab_image_size"
+                    android:layout_height="@dimen/bottom_tab_image_size"
+                    android:background="@color/yellow_ww"
+                    android:duplicateParentState="true" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:gravity="center"
+                    android:text="@string/share"
+                    android:textColor="@color/text_selected_yellow_black" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
 
 </LinearLayout>

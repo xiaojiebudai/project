@@ -6,4 +6,10 @@
     <dimen name="head_operation_height">44dp</dimen>
     <dimen name="head_image_size">24dp</dimen>
 
+    <!-- 通用radius -->
+    <dimen name="common_bg_shape_radius">5dp</dimen>
+    <dimen name="bottom_tab_height">48dp</dimen>
+    <dimen name="bottom_tab_image_size">16dp</dimen>
+    <dimen name="head_center_text_size">16sp</dimen>
+
 </resources>

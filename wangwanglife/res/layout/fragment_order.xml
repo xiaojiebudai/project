@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/head_operation_height"
+        android:background="@color/yellow_ww"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_white_shape"
+            android:checkedButton="@+id/rbtn_left"
+            android:orientation="horizontal"
+            android:padding="1dp" >
+
+            <RadioButton
+                android:id="@+id/rbtn_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_radiobutton_order_l"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="左侧"
+                android:textColor="@color/text_checked_yellow_white" />
+
+            <RadioButton
+                android:id="@+id/rbtn_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_radiobutton_order_r"
+                android:button="@null"
+                android:gravity="center"
+                android:text="右侧"
+                android:textColor="@color/text_checked_yellow_white" />
+        </RadioGroup>
+    </RelativeLayout>
+
+</LinearLayout>
